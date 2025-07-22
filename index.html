@@ -1,15 +1,127 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buzz.AI</title>
      <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐝</text></svg>">
-    
+    <link rel="stylesheet" href="style.css">
+</head>
 
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<body>
+    <header>
+        <div class="content-fit">
+            <div class="logo">🐝 Buzz.AI</div>
+  <div class="nav-wrapper">
+    <nav class="nav-desktop">
+      <ul class="nav-menu">
+        <li><a href="#banner" class="nav-btn">Home</a></li>
+        <li><a href="#intro" class="nav-btn">Problem</a></li>
+        <li><a href="#description" class="nav-btn">Model</a></li>
+        <li><a href="#contact" class="nav-btn">WorkFlow</a></li>
+      </ul>
+    </nav>
+
+    <!-- Register Button -->
+    <a href="http://localhost:5173/register" class="register-link">Register</a>
+  </div>
+
+        </div>
+    </header>
+    <div class="section" id="banner">
+        <div class="content-fit">
+            <div class="title" data-before="BUZZ.AI">QUEEN BEE</div>
+        </div>
+        <img src="img/flower.png" class="decorate" alt="" style="width: 50vw; bottom: 0; right: 0;">
+        <img src="img/leaf.png" class="decorate" alt="" style="width: 30vw; bottom: 0; left: 0;">
+    </div>
+    <div class="section" id="intro">
+        <div class="content-fit">
+            <div class="number">01</div>
+            <div class="des">
+                <div class="title">Problem?</div>
+             <p>
+  The Queen Bee problem refers to the critical challenge of identifying the queen bee within a beehive for monitoring and 
+  conservation purposes. Queen bees play a central role in hive survival, as they are the only fertile females responsible for 
+  laying eggs and maintaining colony structure. Detecting the queen manually is time-consuming and prone to error, especially in 
+  large or aggressive colonies. Delayed or failed detection can lead to colony collapse, reduced honey production, and mismanagement. 
+  Automating queen bee detection using AI can revolutionize hive monitoring by increasing accuracy, minimizing human intervention, and 
+  supporting sustainable beekeeping practices.
+</p>
+<br>
+<blockquote class="quote">
+  🐝 Worry not, beehivers, no need to cry,<br />
+  Buzz.AI is here — to watch, detect, and fly high! 🌼
+</blockquote>
+
+                
+            </div>
+        </div>
+    </div>
+    <div class="section" id="description">
+        <div class="content-fit">
+            <div class="number">02</div>
+            <div class="des">
+             <div class="title">AI Models</div>
+<p class="model-info">
+  To make queen bee detection smart, fast, and reliable, <strong>Buzz.AI</strong> uses the combined power of two intelligent models — <br><strong>Random Forest</strong> and <strong>Convolutional Neural Network (CNN)</strong>.<br>
+ <br>🌳<i> <strong>Random Forest</strong></i>  acts as a fast and interpretable model that works well on structured features extracted from buzzing patterns. It builds multiple decision trees and merges their output to deliver accurate predictions, especially when dealing with limited or statistical audio data.<br>
+<br>
+  🧠 <i><strong>CNNs</strong></i> are deep learning models specialized in capturing complex patterns from spectrograms or waveforms. They can detect subtle differences in queen bee buzzes by analyzing time-frequency representations, making them ideal for real-time, high-precision detection.
+
+ 
+</p>
+
+        <img src="img/leaf1.png" class="decorate" alt="" style="width: 70vw; bottom: 0; right: 0; z-index: 101;">
+    </div>
+    <div class="section" id="contact">
+        <div class="content-fit">
+            <div class="number">03</div>
+            <div class="des">
+  <div class="title">WORKFLOW</div>
+  <table>
+    <tr>
+      <td>Step 1</td>
+      <td>Audio dataset collection from real beehives</td>
+    </tr>
+    <tr>
+      <td>Step 2</td>
+      <td>Noise removal(preprocessing)</td>
+    </tr>
+    <tr>
+      <td>Step 3</td>
+      <td>Feature extraction using signal processing</td>
+    </tr>
+    <tr>
+      <td>Step 4</td>
+      <td>Model training (Random Forest & CNN)</td>
+    </tr>
+    <tr>
+      <td>Step 5</td>
+      <td>Queen bee detection based on audio patterns</td>
+    </tr>
+    <tr>
+      <td>Step 6</td>
+      <td>Real-time deployment through Buzz.AI interface</td>
+    </tr>
+  </table>
+  <div class="sign">queen_bee </div>
+</div>
+
+        </div>
+    </div>
+    <script>
+ function toggleMenu() {
+  document.getElementById('navMenu').classList.toggle('active');
+}
+
+</script>
+
+</body>
+
+
+<div id="container3D"></div>
+<script type="module" src="app.js"></script>
 </html>
